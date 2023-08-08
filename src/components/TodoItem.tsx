@@ -5,7 +5,7 @@ type TodoItemProps ={
     id: string
     title: string
     complete: boolean
-    toggleTodo: {id:string, complete: boolean}
+    toggleTodo: (id:string, complete: boolean)=>void
 }
 
 const TodoItem = ({id, title, complete, toggleTodo}:TodoItemProps) => {
